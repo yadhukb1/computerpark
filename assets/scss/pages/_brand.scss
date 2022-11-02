@@ -1,0 +1,42 @@
+/*--
+/*  4.7 - Brand CSS
+/*----------------------------------------*/
+
+// Brand Wrapper 
+.brand-wrapper{
+    border-bottom: 1px solid #ebebeb;      
+}
+
+.brand-title{
+    font-size: 24px;
+    font-weight: 400;
+    color: $heading-color;
+    margin-top: -7px;
+
+    @media #{$small-mobile}{
+        font-size: 18px;
+    }
+
+    & span{
+        font-weight: 700;
+        color: $primary;
+    }
+}
+
+.brand-active{
+    max-width: 780px;
+    width: 100%;
+    margin: 48px auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

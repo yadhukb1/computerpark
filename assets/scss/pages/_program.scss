@@ -1,0 +1,183 @@
+/*--
+/*  4.1 - Program CSS
+/*----------------------------------------*/
+
+.program-section {
+    background: #fff9eb;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    &  .shape-1 {
+        position: absolute;
+        left: 7%;
+        top: 16%;
+    }
+}
+.program-wrapper {
+    margin-top: 70px;
+    @media #{$desktop-device, $tablet-device, $large-mobile}{
+        margin-top: 50px;
+    }
+}
+.program-item {
+    background: $white;
+    border: 3px dashed #aed139;
+    padding: 35px;
+    border-radius: 30px;
+    transition: all .5s linear;
+    @media #{$tablet-device, $large-mobile}{
+        padding: 30px;
+    }
+    @media #{$small-mobile}{
+        padding: 25px;
+    }
+
+    &.color-2 {
+        border: 3px dashed #1ab9ff;
+
+        & .program-image {
+    
+            & .program-price {
+                & .price {
+                    background: #1ab9ff;
+                }
+            }
+        }
+        
+    }
+    &.color-3 {
+        border: 3px dashed #ffc000;
+
+        & .program-image {
+    
+            & .program-price {
+                & .price {
+                    background: #ffc000;
+                }
+            }
+        }
+    }
+    & .program-image {
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+        & a {
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+
+        & .program-price {
+            position: absolute;
+            left: 40px;
+            top: 20px;
+            & .price {
+                display: inline-block;
+                width: 65px;
+                height: 65px;
+                line-height: 65px;
+                background: #aed139;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 18px;
+                font-weight: 700;
+                color: $white;
+            }
+        }
+    }
+
+    & .program-content {
+
+        & .title {
+            font-size: 24px;
+            line-height: 34px;
+            color: #271344;
+            margin-top: 25px;
+
+            &:hover {
+                & a {
+                    color: #ff4880;
+                }
+            }
+        }
+
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+            padding: 0 10px;
+            margin-top: 10px;
+        }
+
+        & .program-meta {
+            border-top: 1px solid #e1e1e1;
+            margin-top: 35px;
+            padding-top: 15px;
+            & ul {
+
+                & li {
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #ff5085;
+                    position: relative;
+
+                    & + li {
+                        padding-left: 25px;
+                        margin-left: 20px;
+                        @media #{$small-mobile}{
+                            padding-left: 13px;
+                            margin-left: 13px;
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background: #e1e1e1;
+                            width: 1px;
+                            height: 30px;
+                        }
+                    }
+
+                    & span {
+                        font-weight: 700;
+                        color: #271344;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+
+        & .program-image {
+        
+            & img {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+
+.program-active {
+
+    & .swiper-pagination {
+        position: relative;
+        margin-top: 60px;
+
+        & .swiper-pagination-bullet {
+            background: #e1e1e1;
+            margin: 0 8px;
+
+            &.swiper-pagination-bullet-active {
+                background-color: #ff4880;
+            }
+        }
+    }
+}
+

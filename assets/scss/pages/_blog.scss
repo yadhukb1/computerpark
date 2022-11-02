@@ -1,0 +1,225 @@
+/*--
+/*  4.8 - Blog CSS
+/*----------------------------------------*/
+
+// Blog Wrapper 
+.blog-wrapper{
+    padding-top: 20px;
+}
+// Blog Wrapper 
+.blog-wrapper-02{
+    margin-top: -50px;
+}
+
+// Single Blog 
+.single-blog{
+    margin-top: 30px;
+
+    & .blog-image{
+        position: relative;
+
+        & a{
+            display: block;
+            border-radius: 8px;
+            overflow: hidden;
+
+            & img{
+                width: 100%;
+                transition: $transition-default;
+            }
+        }
+
+        & .tags{
+            padding: 0 25px;
+            height: 30px;
+            line-height: 30px;
+            background-color: $primary;
+            font-weight: 500;
+            font-size: 14px;
+            color: $white;
+            position: absolute;
+            display: inline-block;
+            border-radius: 50px;
+            position: absolute;
+            top: 40px;
+            left: 30px;
+
+            @media #{$desktop-device}{
+                left: 20px;
+                top: 30px;
+            }
+            @media #{$small-mobile}{
+                top: 15px;
+                left: 10px;
+            }
+        }
+    }
+    & .blog-content{
+        padding-top: 32px;
+
+        & .meta{
+            display: flex;
+
+            & a{
+                font-size: 14px;
+                font-weight: 400;
+                color: #838383;
+
+                & i{
+                    margin-right: 3px;
+                }
+    
+                // & + a{
+                //     margin-left: 25px;
+                // }
+            }
+            & .date{
+                color: #3bbca7;
+            }
+            & .author{
+                color: #838383;
+                position: relative;
+    
+                &::before{
+                    content: '/';
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #838383;
+                    margin: 0 8px;
+                }
+            }
+        }        
+        
+        & .title{
+            font-size: 24px;
+            font-weight: 700;
+            color: $heading-color;
+            line-height: 1.4;
+            margin-top: 10px;
+
+            @media #{$desktop-device, $small-mobile}{
+                font-size: 18px;
+            }
+            @media #{$tablet-device}{
+                font-size: 20px;
+            }
+            
+        }        
+        & p{
+            margin-top: 15px;
+        }
+
+        & .btn{
+            margin-top: 25px;
+        }
+    }
+    &.single-blog-02{
+        & .blog-image{    
+            & a{
+                border-radius: 0px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;                
+            }
+        }
+        & .blog-content{
+            box-shadow: 0px 0px 98px 0px rgba($black, 0.07);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            background-color: $white;
+            padding: 30px;
+
+            @media #{$small-mobile}{
+                padding: 20px;
+            }
+        }
+    }
+    &.blog-list{
+        margin-top: 50px;
+
+        & .blog-content{
+            & .meta{
+                gap: 25px;
+    
+                & a{
+                   
+                }                
+            }
+        }
+    }
+
+    &:hover{
+        & .blog-image{
+            & a{
+                & img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+
+// Home Style Five
+
+.single-blog-3 {
+
+    & .blog-image {
+
+        & .tags {
+            background: #f6520a;
+        }
+    }
+    & .blog-content {
+
+        & .blog-meta {
+
+            & .author {
+                height: 30px;
+                line-height: 30px;
+                padding: 0 15px;
+                border-radius: 5px;
+                background: #ffedcc;
+                font-size: 12px;
+                font-weight: 600;
+                color: #ffa300;
+            }
+            & .date {
+                font-size: 14px;
+                line-height: 24px;
+                color: #838383;
+                margin-left: 15px;
+            }
+        }
+
+        & .title {
+            color: #1e1e1e;
+
+            &:hover {
+
+                & a {
+                    color: #f6520a;
+                }
+            }
+        }
+        & p {
+            font-size: 16px;
+            color: #666666;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

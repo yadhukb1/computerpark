@@ -1,0 +1,140 @@
+/*--
+/*  4.16 - Page Banner CSS
+/*----------------------------------------*/
+
+// Page Banner Section 
+.page-banner-section {
+    min-height: 500px;
+    padding-top: 78px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @media #{$laptop-device, $desktop-device}{
+        min-height: 400px;
+    }
+    @media #{$tablet-device, $large-mobile}{
+        min-height: 350px;
+    }
+    @media #{$small-mobile}{
+        min-height: 300px;
+    }
+
+    & .shape-1{
+        position: absolute;
+        width: 66px;
+        bottom: 110px;
+        left: 120px;
+        z-index: -1;
+
+        @media #{$desktop-device, $tablet-device}{
+            left: 60px;
+            bottom: 60px;
+            width: 55px;
+        }
+        @media #{$large-mobile}{
+            left: 30px;
+            bottom: 30px;
+            width: 45px;
+        }
+    }
+    & .shape-2{
+        position: absolute;
+        top: 150px;
+        width: 60px;
+        left: 30%;
+        z-index: -1;
+
+        @media #{$tablet-device, $large-mobile}{
+            top: 100px;
+            width: 50px;
+        }
+    }
+    & .shape-3{
+        position: absolute;
+        width: 66px;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+        z-index: -1;
+
+        @media #{$desktop-device, $tablet-device}{
+            width: 55px;
+        }
+        @media #{$large-mobile}{
+            width: 45px;
+        }
+    }
+    & .shape-4{
+        position: absolute;
+        top: -80px;
+        left: -230px;
+        opacity: 0.06;
+        z-index: -1;
+
+        @media #{$laptop-device}{
+            width: 750px;
+            top: -40px;
+            left: -190px;
+        }
+        @media #{$desktop-device, $tablet-device, $large-mobile}{
+            width: 550px;
+            top: 0px;
+            left: -100px;
+        }
+    }
+    & .shape-5{
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0.06;
+        z-index: -1;
+
+        @media #{$laptop-device}{
+            width: 750px;
+        }
+        @media #{$desktop-device, $tablet-device, $large-mobile}{
+            width: 550px;
+        }
+    }
+}
+
+// Page Banner Content 
+.page-banner-content{
+    text-align: center;
+
+    & .title{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 5px;
+
+        @media #{$large-mobile}{
+            font-size: 40px;            
+        }
+        @media #{$small-mobile}{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+    }
+    & .breadcrumb{
+        & .breadcrumb-item{
+            font-size: 16px;
+            color: $body-color;
+
+            @media #{$small-mobile}{
+                font-size: 15px;
+            }
+
+            &::before{
+                color: $primary;
+            }
+
+            &.active{
+                color: $primary;
+            }
+        }
+    }
+}

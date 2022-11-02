@@ -1,0 +1,91 @@
+/*--
+/*  2.4 - Comment CSS
+/*----------------------------------------*/
+
+.animate-01{
+    animation: animate-01 3s infinite;
+}
+@-webkit-keyframes animate-01 {
+    0%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+
+
+.animate-02{
+    animation: animate-02 5s infinite;
+}
+@-webkit-keyframes animate-02 {
+    0%{
+        transform: translateY(50px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+
+.animate-03{
+    animation: animate-03 3s infinite;
+}
+@-webkit-keyframes animate-03 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.animate-04{
+    animation: animate-04 4s infinite;
+}
+@-webkit-keyframes animate-04 {
+    0%{
+        transform: translateX(30px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+}
+
+
+.animate-05{
+    animation: animate-05 15s alternate infinite linear;
+}
+@keyframes animate-05{
+    0% {
+      transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+    20% {
+      transform:  translate(73px,-1px)  rotate(36deg) ;
+    }
+    40% {
+      transform:  translate(141px,72px)  rotate(72deg) ;
+    }
+    60% {
+      transform:  translate(83px,122px)  rotate(108deg) ;
+    }
+    80% {
+      transform:  translate(-40px,72px)  rotate(144deg) ;
+    }
+    100% {
+      transform:  translate(0px,0px)  rotate(0deg) ;
+    }
+}

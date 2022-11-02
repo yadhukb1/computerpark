@@ -1,0 +1,274 @@
+/*--
+/*  5.2 - Footer Widget CSS
+/*----------------------------------------*/
+
+// Footer Widget Area
+.footer-widget-wrapper {
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    @media #{$large-mobile}{
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+}
+
+// Footer Widget
+.footer-widget {
+    margin-top: 40px;
+    color: lighten($body-light, 25);
+}
+
+// Footer Logo 
+.footer-logo{}
+
+// Widget Info
+.footer-widget-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+// Widget Info
+.widget-info{
+    padding-top: 15px;
+
+    & p{
+        font-size: 16px;
+        font-weight: 500;
+        color: $body-color;
+        margin-top: 10px;
+        
+        & i{
+            color: #1fb984;
+            margin-right: 10px;
+            line-height: 28px;
+            display: inline-block;
+        }
+        & a{}
+        & span{}
+    }
+
+    & .social{
+        display: flex;
+        margin-top: 20px;
+
+        & li{
+            margin-right: 10px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            & a{
+                width: 35px;
+                height: 35px;
+                line-height: 33px;
+                border: 1px solid $body-color;
+                text-align: center;
+                border-radius: 50%;
+                color: $body-color;
+
+                &:hover{
+                    background-color: $primary;
+                    border-color: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    & .social-white{
+        & li{
+            & a{
+                color: $primary;
+                border-color: $primary;
+                
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.widget-info-white{
+    & p{
+        color: $white;
+    }
+}
+
+// Widget Link
+.widget-link{
+    padding-top: 25px;
+
+    & .link{
+        & li{
+            margin-top: 5px;
+
+            & a{
+                font-size: 16px;
+                color: $body-color;
+
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.widget-link-white{
+    & .link{
+        & li{
+            & a{
+                color: $white;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+
+// Home Style Five
+
+.footer-section-04 {
+
+    & .footer-widget-wrapper {
+        padding-top: 470px;
+        @media #{$desktop-device}{
+            padding-top: 450px;
+        }
+        @media #{$tablet-device}{
+            padding-top: 285px;
+        }
+        @media #{$large-mobile}{
+            padding-top: 265px;
+        }
+    }
+
+    & .footer-widget {
+
+        .footer-widget-title{
+            color: #1e1e1e;
+        }
+
+        & .widget-info {
+
+            & p {
+
+                & a {
+
+                    &:hover {
+                        color: #f6520a; 
+                    }
+                }
+
+                & i {
+                    color: #f6520a;
+                }
+            }
+            & .social{
+        
+                & li{
+        
+                    & a{
+        
+                        &:hover{
+                            background-color: #f6520a;
+                            border-color: #f6520a;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .widget-link{
+        
+            & .link{
+                & li{
+        
+                    & a{
+        
+                        &:hover{
+                            color: #f6520a;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Home Style Six
+
+.footer-section-05 {
+
+    & .footer-widget {
+
+        & .widget-info {
+
+            & p {
+
+                & a {
+
+                    &:hover {
+                        color: #ff4880; 
+                    }
+                }
+
+                & i {
+                    color: #ff4880;
+                }
+            }
+            & .social{
+        
+                & li{
+
+                    & a {
+                        font-size: 18px;
+                        border: 0;
+                        line-height: 35px;
+                        color: $white;
+                    }
+
+                    &:nth-child(1) {
+                        & a{
+                            background-color: #ffc000;
+                        }
+                    }
+                    &:nth-child(2) {
+                        & a{
+                            background-color: #aed139;
+                        }
+                    }
+                    &:nth-child(3) {
+                        & a{
+                            background-color: #1ab9ff;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .widget-link{
+        
+            & .link{
+                & li{
+        
+                    & a{
+        
+                        &:hover{
+                            color: #ff4880;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

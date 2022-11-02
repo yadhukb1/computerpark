@@ -1,0 +1,48 @@
+/*--
+/*  4.12 - Course category CSS
+/*----------------------------------------*/
+
+// Course Category Section
+.course-category-section{}
+
+// Course Category Wrapper
+.course-category-wrapper{
+    padding-top: 30px;
+}
+
+
+//Single Course Category
+.single-course-category{
+    margin-top: 30px;
+
+    & .course-category-image{
+        & a{
+            display: block;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+    }
+    & .course-category-content{
+        margin-top: 20px;
+
+        & .title{
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        & p{
+            color: #838383;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+/*--
+/*  4.17 - Instructor CSS
+/*----------------------------------------*/
+
+// Instructor Wrapper 
+.instructor-wrapper{
+    padding-top: 30px;
+}
+.instructor-wrapper-02{
+    margin-top: -30px;
+}
+
+// Single Instructor 
+.single-instructor{
+    margin-top: 30px;
+    position: relative;
+
+    & .instructor-image{
+        & a{
+            overflow: hidden;
+            border-radius: 5px;
+            z-index: 1;
+            position: relative;
+            display: block;
+
+            &::before{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 60%);
+                top: 0;
+                left: 0;
+            }
+
+            & img{
+                width: 100%;
+                transition: $transition-default;
+            }
+        }
+    }
+    & .instructor-content{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 40px 20px;
+        z-index: 2;
+
+        & .name{
+            color: $white;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        & p{
+            color: $white;
+            font-size: 14px;
+        }
+    }
+
+    &:hover{
+        & .instructor-image{    
+            & img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

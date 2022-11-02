@@ -1,0 +1,105 @@
+/*--
+/*  3.1 - Header Top CSS
+/*----------------------------------------*/
+
+.offcanvas{
+    width: 320px;
+
+    @media #{$small-mobile}{
+        width: 280px;
+    }
+}
+
+.offcanvas-header{}
+
+.offcanvas-logo{
+    & a{
+        & img{
+            width: 130px;
+        }
+    }
+}
+
+
+.offcanvas-menu{
+    & .main-menu{
+
+        & li{
+            position: relative;
+
+            & a{
+                display: block;
+                font-size: 15px;
+                font-weight: 500;
+                color: #2f3034;
+                padding: 5px 0px;
+                position: relative;
+
+                &.active{
+                    color: $primary;
+                }
+            }
+
+            & .menu-expand{
+                width: 24px;
+                height: 24px;
+                background-color: rgba(47, 48, 52, 0.1);
+                border-radius: 3px;
+                display: block;
+                position: absolute;
+                top: 7px;
+                right: 0;
+
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 10px;
+                    height: 1px;
+                    background-color: $heading-color;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 1px;
+                    height: 10px;
+                    background-color: $heading-color;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: $transition-default;
+                }
+            }
+
+            &:hover{
+                & > a{
+                    color: $primary;                    
+                }
+            }
+
+            & ul{
+                display: none;
+            }
+        }
+    }
+
+    & .sub-menu{
+        background-color: #fdfaf1;
+        padding: 5px 20px;
+        transition: $transition-default;
+
+        & li{
+
+        }
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+/*--
+/*  4.1 - Features CSS
+/*----------------------------------------*/
+
+.features-content-wrap {
+    padding-top: 40px;
+    @media #{$tablet-device, $large-mobile}{
+        padding-top: 20px;
+    }
+}
+
+.features-item {
+    background: #aed139;
+    padding: 70px 35px 20px;
+    margin-top: 30px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: $transition-default;
+    @media #{$desktop-device}{
+        padding: 70px 25px 20px;
+    }
+    @media #{$desktop-device, $tablet-device}{
+        padding: 50px 35px 20px;
+    }
+
+    &.color-2 {
+        background: #1ab9ff;
+    }
+    &.color-3 {
+        background: #ffc000;
+    }
+
+    & .svg-shape {
+        position: absolute;
+        left: -98px;
+        bottom: -105px;
+        z-index: -1;
+    }
+    & .shape-1 {
+        position: absolute;
+        left: 55px;
+        top: -25px;
+        z-index: -1;
+    }
+    & .shape-2 {
+        position: absolute;
+        left: 20px;
+        bottom: 95px;
+        z-index: -1;
+    }
+    & .shape-3 {
+        position: absolute;
+        right: -10px;
+        bottom: 70px;
+        z-index: -1;
+    }
+    & .features-img {
+        border: 3px dashed #799228;
+        border-radius: 29px;
+        padding: 20px;
+        overflow: hidden;
+        & a {
+            display: block;
+            & img {
+                border-radius: 25px;
+                transition: $transition-default;
+            }
+        }
+    }
+    & .features-content {
+
+        & .title {
+            font-size: 36px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: $white;
+            margin-top: 30px;
+            @media #{$desktop-device, $tablet-device, $large-mobile}{
+                font-size: 32px;
+            }
+
+            &:hover {
+
+                & a {
+                    color: #ff4880;
+                }
+            }
+        }
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+            color: $white;
+            opacity: 0;
+            visibility: hidden;
+            transition: $transition-default;
+        }
+    }
+
+    &:hover {
+        padding: 40px 35px 35px;
+        
+        & .features-content  {
+            & p {
+                padding-top: 15px;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

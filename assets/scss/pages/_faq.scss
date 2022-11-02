@@ -1,0 +1,46 @@
+/*--
+/*  4.20 - FAQ CSS
+/*----------------------------------------*/
+
+// Faq Weapper 
+.faq-wrapper{
+    & .accordion{}
+}
+
+// Single FAQ 
+.single-faq{
+    border: 0;
+    margin-top: 20px;
+    padding: 40px 40px;
+
+    @media #{$large-mobile}{
+        padding: 20px;
+    }
+
+    & .accordion-button{
+        box-shadow: none;
+        background-color: $white;
+        font-size: 22px;
+        line-height: 1.4;
+        font-weight: 700;
+        color: $heading-color;
+        padding: 0;     
+        
+        @media #{$large-mobile}{
+            font-size: 18px;
+        }
+    }
+    & .accordion-body{
+        padding: 0;
+        
+        & p{
+            padding-top: 15px;
+        }
+    }
+}
+
+
+
+
+
+

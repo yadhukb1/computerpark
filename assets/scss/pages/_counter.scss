@@ -1,0 +1,303 @@
+/*--
+/*  4.2 - Counter CSS
+/*----------------------------------------*/
+
+// Counter Section 
+.counter-section{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    & .counter-shape-01{
+        border-radius: 50%;
+        background-color: #afe0fb;
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        z-index: -1;
+        left: 6%;
+        top: 12%;
+    }
+    & .counter-shape-02{
+        width: 1093px;
+        position: absolute;
+        z-index: -1;
+        top: -150px;
+        right: -200px;
+        opacity: 0.1;
+
+        @media #{$desktop-device}{
+            width: 893px;
+        }
+
+        & svg{
+            & .shape-path{
+                fill: #3bbca7;
+            }
+        }
+        
+    }
+}
+
+// Counter Wrapper 
+.counter-wrapper{
+    border-bottom: 1px solid #ebebeb;
+    padding-top: 40px;
+    padding-bottom: 70px;
+
+    & .row{
+        & .col{
+            & .single-counter{
+                border-right: 1px solid #ebebeb;
+
+                @media #{$small-mobile}{
+                    border-right: 0;
+                }
+            }
+
+            &:last-child{
+                & .single-counter{
+                    border-right: 0;
+                }
+            }
+        }
+    }
+    
+}
+
+// Single Counter 
+.single-counter{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    @media #{$small-mobile}{
+        justify-content: flex-start;
+    }
+
+    & .counter-box{
+        display: flex;
+        align-items: center;
+
+        & .counter-icon{
+            & img{
+                @media #{$tablet-device, $large-mobile}{
+                    height: 60px;
+                }
+            }
+        }
+        & .counter-content{
+            flex: 1;
+            padding-left: 40px;
+
+            @media #{$tablet-device, $large-mobile}{
+                padding-left: 20px;
+            }
+
+            & .count{
+                font-size: 48px;
+                font-weight: 700;
+                color: $heading-color;
+                line-height: 1.2;
+
+                @media #{$tablet-device}{
+                    font-size: 40px;
+                }
+                @media #{$large-mobile}{
+                    font-size: 30px;
+                }
+            }
+            & p{}
+        }
+    }
+}
+
+
+// Counter Wrapper 
+.counter-wrapper-02{
+    & .title{
+        color: $white;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.3;
+
+        @media #{$desktop-device}{
+            font-size: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 20px;
+        }
+    }
+}
+
+// Single Counter 
+.single-counter-02{
+    text-align: center;
+    margin-top: 30px;
+    
+    & .cont{
+        color: $primary;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1;
+
+        @media #{$tablet-device}{
+            font-size: 40px;
+        }
+        @media #{$small-mobile}{
+            font-size: 30px;
+        }
+    }
+    & p{}
+}
+
+// Counter Wrapper 03
+.counter-wrapper-03{
+    padding-top: 15px;
+}
+
+// Single Counter 
+.single-counter-03{
+    text-align: center;
+    margin-top: 30px;
+    
+    & .cont{
+        color: $white;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1;
+
+        @media #{$tablet-device}{
+            font-size: 40px;
+        }
+        @media #{$small-mobile}{
+            font-size: 30px;
+        }
+    }
+    & p{
+        color: $white;
+    }
+}
+
+
+// Counter Wrapper 04
+.counter-wrapper-04{}
+
+
+// Counter Content
+.counter-content{
+    max-width: 410px;
+
+    & .title{
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin-top: -6px;
+
+        @media #{$desktop-device}{
+            font-size: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 20px;
+        }
+    }
+
+    & .signechar{
+        margin-top: 30px;
+    }
+
+    & .author{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+
+        & .author-images{
+            flex-shrink: 0;
+
+            & img{
+                width: 90px;
+                border-radius: 50%;
+            }
+        }
+        & .author-content{
+            flex-grow: 1;
+            padding-left: 30px;
+
+            & .name{
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.3;
+            }
+            & p{
+                font-size: 14px;
+            }
+        }
+    }
+    
+    
+}
+
+// Single Counter 
+.counter-box-wrapper{
+    position: relative;
+    z-index: 1;
+
+    & .shape-1{
+        position: absolute;
+        width: 115px;
+        left: 15%;
+        top: 20px;
+        z-index: -1;
+    }
+
+    & .row{
+        & .col{
+            &:first-child{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+// Single Counter 
+.single-counter-box{
+    text-align: center;
+    margin-top: 30px;
+    background-color: $white;
+    box-shadow: 0px 0px 79px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    @media #{$desktop-device, $large-mobile}{
+        height: 150px;
+    }
+
+    & .counter-box{
+        height: auto;
+    }
+
+    & .cont{
+        color: $primary;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1;
+
+        @media #{$tablet-device}{
+            font-size: 40px;
+        }
+        @media #{$small-mobile}{
+            font-size: 30px;
+        }
+    }
+    & p{
+        color: $heading-color;
+    }
+}
+
+
+
+

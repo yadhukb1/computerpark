@@ -1,0 +1,428 @@
+/*--
+/*  5.1 - Sidebar Widget CSS
+/*----------------------------------------*/
+
+// Sidebar Wrapper
+.sidebar-wrap {
+    position: sticky;
+    top: 100px;
+    
+    & hr{
+        margin: 50px 0 0px;
+    }
+}
+
+//Sidebar Widget Title
+.widget-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+//Sidebar Widget
+.sidebar-widget {
+    margin-top: 50px;
+
+    & .widget-search{
+        position: relative;
+
+        & .form-control{
+            height: 50px;
+            padding-right: 45px;
+        }
+        & button{
+            width: 50px;
+            height: 50px;
+            top: 0;
+            right: 0;
+            position: absolute;
+            border: 0;
+            background-color: transparent;
+            font-size: 16px;
+            color: #111111;
+        }
+    }
+
+    & .widget-post{}
+
+    & .widget-sidebar-link{
+        padding-top: 5px;
+
+        & ul{
+            & li{
+                margin-top: 15px;
+
+                & a{
+                    font-size: 16px;
+                    color: #29303c;
+                    line-height: 20px;
+                    display: block;
+
+                    & span{
+                        width: 20px;
+                        height: 20px;
+                        text-align: center;
+                        background-color: #e4f2f8;
+                        border-radius: 50px;
+                        display: block;
+                        float: right;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #29303c;
+                        transition: $transition-default;
+                    }
+
+                    &::before{
+                        content: '\f105 ';
+                        font-family: $fontawesome;
+                        font-size: 14px;
+                        color: $primary;
+                        margin-right: 10px;
+                    }
+
+                    &:hover{
+                        color: $primary;
+
+                        & span{
+                            background-color: $primary;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .widget-tags{
+        padding-top: 15px;
+
+        & ul{
+            margin-left: -5px;
+            margin-right: -5px;
+            display: flex;
+            flex-wrap: wrap;
+
+            & li{
+                padding: 5px;
+
+                & a{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $body-color;
+                    height: 32px;
+                    line-height: 32px;
+                    padding: 0 22px;
+                    border-radius: 4px;
+                    background-color: #f9f9f9;
+
+                    &:hover{
+                        background-color: $primary;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    & .widget-banner{
+        & a{
+            & img{
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+//Sidebar Mini Post
+.single-mini-post{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    
+    & .mini-post-image{
+        flex-shrink: 0;
+
+        & a{
+            display: block;
+
+            & img{
+                width: 70px;
+                height: 70px;
+                border-radius: 4px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    & .mini-post-content{
+        flex-grow: 1;
+        padding-left: 20px;
+
+        & .title{
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.5;
+
+            & a{}
+        }
+        & .date{
+            color: $primary;
+            font-size: 13px;
+            margin-top: 5px;
+            display: block;
+        }
+    }
+}
+
+//Sidebar Wrapper 02
+.sidebar-wrap-02{
+    background-color: #f8f8f8;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 35px 40px;
+    margin-top: 50px;
+
+    @media #{$desktop-device, $small-mobile}{
+        padding: 35px 25px;
+    }
+}
+
+.course-collapse{
+    margin-top: 50px;
+    background-color: #f8f8f8;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 35px 40px ;
+    transition: $transition-default;
+}
+
+//Sidebar Widget 02
+.sidebar-widget-02{
+
+    & + .sidebar-widget-02{
+        padding-top: 22px;
+    }    
+}
+
+// Widget Checkbox
+.widget-checkbox{
+    margin-top: 18px;
+
+    & .checkbox-list{
+        & li{
+            min-height: auto;
+            margin-bottom: 0;
+            margin-top: 18px;
+        }
+    }
+
+    & .rating{
+        position: relative;
+        display: inline-block;
+
+        &::before{
+            content: '\f005 \f005 \f005 \f005 \f005';
+            font-family: $fontawesome;
+            color: #dedede;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        & .rating-on{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow: hidden;
+
+            &::before{
+                content: '\f005 \f005 \f005 \f005 \f005';
+                font-family: $fontawesome;
+                color: #fda000;
+                font-size: 14px;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+// Sidebar Details Wrapper
+.sidebar-details-wrap{
+    margin-top: -388px;
+    position: relative;
+    z-index: 1;
+    position: sticky;
+    top: 100px;
+
+    @media #{$tablet-device, $large-mobile}{
+        margin-top: 50px;
+    }
+}
+
+
+// Sidebar Details Video & Description
+.sidebar-details-video-description{
+    background-color: $white;
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.12);
+          
+    & .sidebar-video{
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 40%);
+            top: 0;
+            left: 0;
+        }
+
+        & img{
+            width: 100%;
+        }
+
+        & .play{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            background-color: $white;
+            border-radius: 50%;
+            font-size: 14px;
+            color: $heading-color;
+            text-align: center;
+            z-index: 2;
+
+            &:hover{
+                color: $white;
+                background-color: $primary;
+            }
+        }
+    }
+    & .sidebar-description{
+        padding: 40px 40px 60px;
+
+        @media #{$desktop-device, $small-mobile}{
+            padding: 30px 20px 30px;
+        }
+
+        & .price{
+            margin-top: -5px;
+
+            & .sale-price{
+                font-size: 24px;
+                font-weight: 700;
+                color: $heading-color;
+            }
+            & .regular-price{
+                font-size: 16px;
+                font-weight: 400;
+                color: $primary;
+                text-decoration: line-through;
+                margin-left: 10px;
+            }
+        }
+
+        & .btn{
+            margin-top: 20px;
+        }
+
+        & .description-list{
+            padding-top: 26px;
+            padding-bottom: 15px;
+
+            & li{
+                font-weight: 700;
+                font-size: 16px;
+                color: $body-color;
+                border-bottom: 1px solid #ebebeb;
+                padding: 10px 0;
+
+                @media #{$desktop-device, $small-mobile}{
+                    font-size: 15px;
+                }
+
+                &:last-child{
+                    border-bottom: 0;
+                }
+
+                & span{
+                    font-weight: 400;
+                    float: right;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+// Sidebar Details Course 
+.sidebar-details-course{
+    margin-top: 60px;
+}
+
+.sidebar-details-title{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.sidebar-details-courses{
+    & li{
+        padding: 30px 0;
+        border-bottom: 1px solid #ebebeb;
+
+        &:last-child{
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+}
+
+.sidebar-course-item{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    & .item-image{
+        flex-shrink: 0;
+
+        & img{
+            width: 100px;
+            height: 100px;
+            object-position: center;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+    & .item-content{
+        flex-grow: 1;
+        max-width: 200px;
+
+        & .title{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        & .price{
+            font-weight: 400;
+            font-size: 16px;
+            color: #838383;
+            display: block;
+            margin-top: 5px;
+
+            & strong{
+                font-weight: 700;
+                color: $primary;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+

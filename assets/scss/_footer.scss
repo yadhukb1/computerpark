@@ -1,0 +1,78 @@
+/*--
+/*  07. Footer CSS
+/*----------------------------------------*/
+
+// Footer Section
+.footer-section {
+    background-color: #f8f8f8;
+}
+.footer-section-02{
+    background-color: $heading-color;
+}
+.footer-section-03{
+    background-color: #151948;
+}
+
+.footer-section-05 {
+    background: #271344;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+// Footer Copyright
+.footer-copyright {
+    border-top: 1px solid #ebebeb;
+    padding: 25px 0;
+
+    & p{
+        font-size: 14px;
+    }
+}
+
+.footer-copyright-white{
+    border-top-color: rgba($white, 0.2);
+
+    & p{
+        color: rgba($white, 0.6);
+    }
+}
+
+// Back Button 
+.back-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $primary;
+    border: 0;
+    transition: $transition-default;
+    font-size: 16px;
+    color: $white;
+    z-index: 99;
+
+    &:hover{
+        background-color: $heading-color;
+        color: $white;
+        box-shadow: 0px 0px 16px 0px rgba($white, 0.07);
+    }
+
+    &.back-btn-2 {
+        background-color: #f6520a;
+
+        &:hover{
+            background-color: #ffa300;
+        }
+    }
+    &.back-btn-3 {
+        background-color: #ff4880;
+
+        &:hover{
+            background-color: #271344;
+        }
+    }
+}
+
+  

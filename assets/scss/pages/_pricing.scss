@@ -1,0 +1,178 @@
+/*--
+/*  4.19 - Pricing CSS
+/*----------------------------------------*/
+
+// Pricing Wrapper 
+.pricing-wrapper{
+    & .row{ 
+        & [class*="col-"]{
+            &:first-child{
+                // Single Pricing 
+                & .single-pricing{
+                    
+                    @media #{$extraBig-device, $laptop-device}{
+                        border-top-right-radius: 0px;
+                        border-bottom-right-radius: 0px;
+                        border-right: 0;
+                    }
+                }
+            }
+            &:last-child{
+                // Single Pricing 
+                & .single-pricing{
+                    
+                    @media #{$extraBig-device, $laptop-device}{
+                        border-top-left-radius: 0px;
+                        border-bottom-left-radius: 0px;
+                        border-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    & .tab-content{
+        padding-top: 40px;
+    }
+}
+
+// Pricing Button 
+.pricing-btn{
+    margin-top: 45px;
+
+    & li{
+        & button{
+            width: 185px;
+            height: 60px;
+            border: 1px solid $primary;
+            font-size: 18px;
+            font-weight: 500;
+            color: $heading-color;
+            transition: $transition-default;
+            background-color: transparent;
+            text-align: center;
+
+
+            @media #{$large-mobile}{
+                font-size: 16px;
+                height: 50px;
+                width: 145px;
+            }
+            @media #{$small-mobile}{
+                height: 45px;
+                font-size: 15px;
+                width: 135px;
+            }
+            &.active{
+                background-color: $primary;
+                color: $white;
+            }
+        }
+
+        &:first-child{
+            & button{
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+        }
+
+        &:last-child{
+            & button{
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
+    }
+}
+
+// Single Pricing 
+.single-pricing{
+    border: 1px solid #eeeeee;
+    padding: 50px 60px;    
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+
+    @media #{$desktop-device, $small-mobile}{
+        padding: 30px 30px;
+    }
+
+    & .pricig-header{
+        & .title{
+            font-size: 26px;
+            font-weight: 600;
+            color: $heading-color;
+        }
+        & p{
+            font-size: 18px;
+            font-weight: 600;
+            color: $heading-color;
+            line-height: 1.2;
+
+            & span{
+                font-size: 36px;
+            }
+        }
+        & .btn{
+            width: 100%;
+            margin-top: 30px;
+            box-shadow: none;
+        }
+    }
+    & .pricig-body{
+        & .pricig-list{
+            padding-top: 35px;
+
+            & li{
+                font-size: 16px;
+                color: $body-color;
+                margin-top: 5px;
+
+                & span{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    
+    &.active{
+        background-color: $primary;
+        border-radius: 10px;
+        padding: 80px 60px;
+        margin-top: 0px;
+
+        @media #{$desktop-device, $small-mobile}{
+            padding: 60px 30px;
+        }
+        @media #{$tablet-device, $large-mobile}{
+            margin-top: 30px;
+        }
+
+
+        & .pricig-header{
+            & .title{
+                color: $white;
+            }
+            & p{
+                color: $white;
+            }
+        }
+        & .pricig-body{
+            & .pricig-list{    
+                & li{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

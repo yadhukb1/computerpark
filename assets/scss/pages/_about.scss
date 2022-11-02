@@ -1,0 +1,295 @@
+/*--
+/*  4.15 - About CSS
+/*----------------------------------------*/
+
+
+// About Wrapper 
+.about-wrapper{
+    margin-top: -30px;
+}
+
+// About Images
+.about-images{
+    position: relative;
+    z-index: 1;
+
+    & .shape-1{
+        width: 150px;
+        position: absolute;
+        top: 30px;
+        left: 85px;
+        z-index: -1;
+
+        @media #{$desktop-device}{
+            width: 120px;
+            left: 45px;
+        }
+        @media #{$large-mobile}{
+            width: 100px;
+            left: 50px;
+        }
+    }
+    
+    & .single-image{
+        margin-top: 30px;
+
+        & img{
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+}
+
+// About Content
+.about-content{
+    margin-top: 30px;
+    max-width: 520px;
+    margin-left: auto;
+
+    @media #{$tablet-device, $large-mobile}{
+        margin-left: 0;
+    }
+
+    & .title{
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.3;
+
+        @media #{$desktop-device}{
+            font-size: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 20px;
+        }
+    }
+
+    & p{
+        margin-top: 30px;
+    }
+    & ul{
+        padding-top: 20px;
+
+        & li{
+            position: relative;
+            padding-left: 35px;
+            margin-top: 10px;
+            
+            &::before{
+                position: absolute;
+                content: '\f00c';
+                font-family: $fontawesome;
+                top: 0;
+                left: 0;
+                color: $primary;
+            }
+        }
+    }
+
+    & .play{
+        margin-top: 30px;
+
+        & i{
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: $primary;
+            color: $white;
+        }
+        & span {
+            color: $heading-color;
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+    }
+}
+
+
+// Home Style Five
+
+.about-02-section {
+        padding-top: 190px;
+        padding-bottom: 120px;
+        @media #{$desktop-device}{
+            padding-top: 170px;
+            padding-bottom: 100px;
+        }
+        @media #{$tablet-device}{
+            padding-top: 150px;
+            padding-bottom: 80px;
+        }
+        @media #{$large-mobile}{
+            padding-top: 140px;
+            padding-bottom: 60px;
+        }
+    & .about-img-02 {
+        position: relative;
+        z-index: 1;
+        @media #{$tablet-device, $large-mobile}{
+            text-align: center;
+        }
+
+        & .shape-1 {
+            position: absolute;
+            left: -90px;
+            top: -70px;
+            z-index: -1;
+            @media #{$desktop-device}{
+                left: -10px;
+                top: -70px;
+            }
+            @media #{$tablet-device, $large-mobile}{
+                left: 0;
+            }
+        }
+        & .image {
+
+        }
+    }
+    & .about-content-02 {
+        padding-left: 40px;
+        padding-right: 65px;
+        @media #{$desktop-device}{
+            padding-right: 0px;
+        }
+        @media #{$tablet-device, $large-mobile}{
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-top: 50px;
+        }
+        & .section-title-2 {
+
+            & .sub-title {
+
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        & p  {
+            font-size: 16px;
+            line-height: 30px;
+            color: #525252;
+            margin-top: 25px;
+        }
+        & .about-list {
+            padding-top: 20px;
+            & li {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                color: #1e1e1e;
+                margin-top: 10px;
+
+                & i {
+                    color: #f6520a;
+                    margin-right: 15px;
+                }
+            }
+        }
+        & .btn {
+            margin-top: 40px;
+        }
+    }
+}
+
+// Home Style Six
+
+.about-section-03 {
+
+    & .about-img {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+        & .shape-1 {
+            position: absolute;
+            left: 40px;
+            top: 0;
+            z-index: -1;
+        }
+        & .shape-2 {
+            position: absolute;
+            left: 10px;
+            bottom: 150px;
+            z-index: -1;
+        }
+        & .shape-3 {
+            position: absolute;
+            right: 0;
+            top: 160px;
+            z-index: -1;
+        }
+        & .shape-4 {
+            position: absolute;
+            right: 20px;
+            bottom: 50px;
+            z-index: -1;
+        }
+        & .image {
+
+            & img {
+                border-radius: 30px;
+            }
+        }
+    }
+
+    & .about-content-03 {
+        padding-left: 100px;
+        padding-right: 30px;
+        @media #{$desktop-device}{
+            padding-left: 40px;
+            padding-right: 0px;
+        }
+        @media #{$tablet-device, $large-mobile}{
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-top: 50px;
+        }
+
+        & .section-title-3 {
+
+
+            & .title {
+                line-height: 1.37;
+            }
+        }
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+            color: #525252;
+            margin-top: 35px;
+        }
+        & .about-list {
+            margin-top: 30px;
+            & ul {
+
+                & li {
+                    display: flex;
+                    align-items: flex-start;
+                    font-size: 18px;
+                    line-height: 36px;
+                    font-family: $heading-font;
+                    font-weight: 600;
+                    color: #271344;
+                    & .about-list-icon {
+                        color: #ff4880;
+                        margin-right: 15px;
+                    }
+                    & .about-list-text {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

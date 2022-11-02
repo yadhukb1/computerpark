@@ -1,0 +1,152 @@
+/*--
+/*  4.11 - Banner CSS
+/*----------------------------------------*/
+
+// Banner Wrapper
+.banner-wrapper{
+    margin-top: -50px;
+}
+
+.single-banner{
+    position: relative;
+    margin-top: 50px;
+
+    & .banner-images{
+        & img{
+            width: 100%;
+            border-radius: 3px;
+        }
+    }
+    & .banner-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 68%;
+        padding: 60px;
+
+        @media #{$desktop-device, $large-mobile}{
+            padding: 30px;
+            width: 73%;
+        }
+        @media #{$small-mobile}{
+            padding: 15px;
+        }
+
+        & .sub-title{
+            font-size: 14px;
+            font-weight: 700;
+            color: $primary;
+        }
+        & .title{
+            font-size: 26px;
+            font-weight: 700;
+            color: $heading-color;
+            line-height: 1.3;
+
+            @media #{$small-mobile}{
+                font-size: 16px;
+                margin-top: 5px;
+            }
+        }
+        & .btn{
+            margin-top: 25px;
+
+            @media #{$small-mobile}{
+                font-size: 13px;
+                height: 35px;
+                line-height: 35px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+// Home Style Five
+
+.banner-section-02 {
+
+    & .banner-wrap-02 {
+        margin-top: -30px;
+        & .single-item {
+            background: #ece7e1;
+            padding: 55px 55px 65px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-top: 30px;
+            position: relative;
+            z-index: 1;
+            @media #{$small-mobile}{
+                padding: 35px;
+            }
+    
+            & .image-1 {
+                position: absolute;
+                right: -90px;
+                top: 50px;
+                z-index: -1;
+            }
+            & .image-2 {
+                position: absolute;
+                right: -62px;
+                bottom: -10px;
+                z-index: -1;
+            }
+    
+            & .banner-content {
+    
+                & .discount {
+                    font-size: 22px;
+                    line-height: 30px;
+                    font-weight: 700;
+                    color: #f6520a;
+                }
+                & .title {
+                    font-size: 38px;
+                    line-height: 44px;
+                    font-weight: 600;
+                    color: #1e1e1e;
+                    margin-top: 5px;
+                    @media #{$small-mobile}{
+                        font-size: 32px;
+                        line-height: 42px;
+                    }
+                }
+                & .btn {
+                    margin-top: 30px;
+                }
+            }
+    
+            &.item-2 {
+                background: #adddc7;
+    
+                & .banner-content {
+    
+                    & .discount {
+                        color: #ffa300;
+                    }
+                    & .title {
+                        color: $white;
+                    }
+                    & .btn {
+                        background: #ffa300;
+    
+                        &:hover {
+                            background: #f6520a;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+ 
+
+
+
+
+
+
+
+

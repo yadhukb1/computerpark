@@ -1,0 +1,90 @@
+/*--
+/*  4.1 - Team CSS
+/*----------------------------------------*/
+
+
+.team-content-wrapper {
+    padding-top: 20px;
+}
+.single-team {
+    background: #aed139;
+    border-radius: 30px;
+    padding: 55px 70px;
+    transform: translate3d(0, 0, 0);
+    margin-top: 120px;
+    transition: $transition-default;
+    @media #{$desktop-device, $tablet-device}{
+        padding: 50px 60px;
+    }
+    @media #{$large-mobile}{
+        padding: 50px 35px;
+    }
+
+    &.color-2 {
+        background: #1ab9ff;
+    }
+    &.color-3 {
+        background: #ff4880;
+    }
+    &.color-4 {
+        background: #ffc000;
+    }
+
+    & .team-img {
+        margin-top: -135px;
+        & a {
+
+            & img {
+                border-radius: 50%;
+            }
+        }
+    }
+    & .team-content {
+
+        & .title {
+            font-size: 24px;
+            line-height: 1;
+            font-weight: 700;
+            margin-top: 25px;
+
+            & a {
+                color: $white;
+            }
+        }
+        & .designation {
+            font-size: 16px;
+            line-height: 24px;
+            color: $white;
+        }
+        & .team-social {
+            margin-top: 20px;
+            & ul {
+
+                & li {
+                    display: inline-block;
+                    margin-right: 5px;
+    
+                    & a {
+                        height: 30px;
+                        width: 30px;
+                        line-height: 32px;
+                        text-align: center;
+                        border-radius: 50%;
+                        display: inline-block;
+                        font-size: 16px;
+                        background: $white;
+                        color: #271344;
+
+                        &:hover {
+                            color: #ff4880;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        transform: translateY(-5px) translate3d(0, -5px, 0);
+    }
+}
